@@ -31,3 +31,24 @@ export type PillProps = {
   children: ReactNode
   className?: string
 }
+
+export type BookGridProps = {
+  books: Book[]
+}
+
+//Book categories
+export type BookCategorySlug = 
+  | "fiction" 
+  | "romance"
+  | "fantasy"
+  | "thriller"
+  | "horror"
+  | "historical"
+  | "biography"
+  | "self-help";
+
+export type Category = {
+  id: number
+  slug: BookCategorySlug
+  label: string
+}
