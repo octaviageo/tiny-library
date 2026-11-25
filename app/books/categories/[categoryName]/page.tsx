@@ -3,6 +3,7 @@ import BooksGrid from "@/app/components/BookGrid";
 import {getBooksByCategory, getCategoryBySlug} from "@/app/lib/books";
 
 
+
 export default async function CategoryPage ({ params }: { params: Promise<{ categoryName: BookCategorySlug }> }) {
   const { categoryName } = await params;
   
@@ -11,7 +12,7 @@ export default async function CategoryPage ({ params }: { params: Promise<{ cate
 
   return(
     <div className="container px-4 py-8 mx-auto">
-      <h1 className="mb-8 text-3xl font-bold capitalize">
+      <h1 className="mb-8 text-3xl font-bold capitalize ">
         {category.label}
       </h1>
 

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image"
 import logo from "@/public/logo_new.svg"
 import logoIcon from "@/public/logo_icon.svg"
+import NavLink from "./NavLink";
 
 export default function Navbar() {
     return (
@@ -28,9 +29,9 @@ export default function Navbar() {
               </Link>
             </div>
             <ul className="flex items-center gap-2.5">
-              <li><Link href="/about">About</Link></li>
-              <li><Link href="/books">Books</Link></li>
-              <li><Link href="/about/contact">Contact</Link></li>
+              <li><NavLink href="/about">About</NavLink></li>
+              <li><NavLink href="/books">Books</NavLink></li>
+              <li><NavLink href="/about/contact">Contact</NavLink></li>
             </ul>
           </nav>
         </header>
