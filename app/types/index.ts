@@ -52,3 +52,22 @@ export type Category = {
   slug: BookCategorySlug
   label: string
 }
+
+export type BooksPageProps = {
+  searchParams: Promise<{
+    query?: string;
+  }>;
+};
+
+export type CategoryPageProps = {
+  params: Promise<{
+    categoryName: BookCategorySlug;
+  }>;
+  searchParams: Promise<{
+    query?: string;
+  }>;
+};
+
+export type NoSearchResultsProps = {
+  query: string;
+};

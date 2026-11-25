@@ -11,28 +11,28 @@ export default function BooksLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div>
-      <nav
-        className="flex flex-wrap items-center gap-4 border-gray-200 px-4 py-4"
-        aria-label="Book categories"
-      >
-        <CategoryNavLink
-          href="/books"
+    <div className="container mx-auto flex flex-col gap-8 px-4 py-8 md:flex-row md:gap-12">
+      <aside className="shrink-0 md:w-40">
+        <nav
+          className="flex flex-wrap gap-2 md:flex-col md:items-start md:gap-4 md:pt-20"
+          aria-label="Book categories"
         >
-          All
-        </CategoryNavLink>
-
-        {categories.map((category) => (
-          <CategoryNavLink
-            key={category.id}
-            href={`/books/categories/${category.slug}`}
-          >
-            {category.label}
+          <CategoryNavLink href="/books">
+            All
           </CategoryNavLink>
-        ))}
-      </nav>
 
-      <div>{children}</div>
+          {categories.map((category) => (
+            <CategoryNavLink
+              key={category.id}
+              href={`/books/categories/${category.slug}`}
+            >
+              {category.label}
+            </CategoryNavLink>
+          ))}
+        </nav>
+      </aside>
+
+      <div className="min-w-0 flex-1">{children}</div>
     </div>
   );
 }
