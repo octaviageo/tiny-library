@@ -16,6 +16,7 @@ export default async function BookDetailPage({ params } : BookDetailPageProps) {
             src={placeholderImg.src}
             alt={`3D model of ${book.name}`}
             className="absolute inset-0 object-cover w-full h-full"
+            loading="lazy"
           />
         </figure>
 
@@ -44,10 +45,10 @@ export default async function BookDetailPage({ params } : BookDetailPageProps) {
             aria-label="Likes count"
           >
             <FaRegHeart
-              className="w-5 h-5 mr-2"
+              className="w-4 h-4 mr-2"
               aria-hidden="true"
             />
-            <span className="font-light" aria-label={`${book.likes} likes`}>{book.likes}</span>
+            <span className="font-light text-lg" aria-label={`${book.likes} likes`}>{book.likes}</span>
           </div>
 
 

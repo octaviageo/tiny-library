@@ -28,7 +28,7 @@ export default function Navbar() {
                 />
               </Link>
             </div>
-            <ul className="flex items-center gap-2.5">
+            <ul className="flex items-center gap-6.5">
               <li><NavLink href="/about">About</NavLink></li>
               <li><NavLink href="/books">Books</NavLink></li>
               <li><NavLink href="/about/contact">Contact</NavLink></li>

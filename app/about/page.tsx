@@ -9,14 +9,15 @@ import flag from "@/public/icons/Flag.svg"
 export default function About () {
     return (
         <main>
-            <section className = "grid grid-cols-2 gap-8 px-6 py-12 mx-auto md:flex-row max-w-7xl ">
+            <section className = "grid grid-cols-1 md:grid-cols-2 gap-8 px-6 py-12 mx-auto md:flex-row max-w-7xl ">
             <div>
                 <Image 
                     src={heroImage} 
                     alt="Tiny Library" 
-                    width={500} 
+                    loading="lazy"
+                    width={400} 
                     height={300}
-                    className="rounded-lg" />
+                    className="rounded-lg justify-center" />
             </div>
             <div className="flex flex-col gap-5 justify-center">
                 <span className="uppercase text-sm">About Tiny Library</span>

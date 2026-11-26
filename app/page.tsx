@@ -7,14 +7,14 @@ export default function Home() {
     <main>
       <section className="flex flex-col-reverse items-center justify-between gap-8 px-6 py-12 mx-auto md:flex-row max-w-7xl">
         <div className="flex-1 space-y-6">
-          <p className="hidden text-sm text-gray-600 uppercase md:block">
+          {/* <p className="hidden text-sm text-gray-600 uppercase md:block">
             Browse books
-          </p>
+          </p> */}
           <h1 className="text-4xl font-bold md:text-5xl">
             Find your next favorite book
           </h1>
         
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-gray-600 w-2xl">
             Tiny Library is a cosy corner of the web where readers 
             discover hand‑picked titles across every genre, from 
             timeless classics to hidden indie gems.
@@ -32,6 +32,7 @@ export default function Home() {
         <Image 
           src={maskImage} 
           alt="Tiny Library image"
+          loading="lazy"
           width={350} 
           height={300} />
       </section>

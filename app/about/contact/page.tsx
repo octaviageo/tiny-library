@@ -1,10 +1,21 @@
 import Link from "next/link";
+import Image from "next/image"
+import contactImage from "@/public/contact.jpg"
 
 export default function Contact () {
     return (
-        <section className = "flex gap-8 px-6 py-12 mx-auto md:flex-row max-w-7xl align-center justify-center">
+        <section className = "grid grid-cols-1 md:grid-cols-2 gap-8 px-6 py-12 mx-auto md:flex-row max-w-7xl">
+            <div>
+                <Image 
+                    src={contactImage} 
+                    alt="Tiny Library" 
+                    loading="lazy"
+                    width={400} 
+                    height={300}
+                    className="rounded-lg justify-center" />
+            </div>
             <div className="flex flex-col gap-5 justify-center">
-                <span className="uppercase text-sm">Reach out to us</span>
+                {/* <span className="uppercase text-sm">Reach out to us</span> */}
                  <h1 className="text-4xl font-bold md:text-5xl">Contact</h1>
                  <p className="text-lg text-gray-600">
                     You can get in touch with us via email regarding: 
@@ -20,7 +31,7 @@ export default function Contact () {
                         <b>Careers</b>: Interested in joining the Tiny Library team? Reach out to us. 
                     </li>
                  </ul>
-                 <div className="flex justify-center">
+                 <div className="flex ">
                     <Link
                         href="mailto:hello@tinylibrary.com"
                         className="inline-flex items-center justify-center px-6 py-3
@@ -31,6 +42,7 @@ export default function Contact () {
                         Email Us
                     </Link>
                 </div>
+                
             </div>
             </section>
     )
