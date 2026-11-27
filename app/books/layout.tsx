@@ -14,7 +14,7 @@ export default function BooksLayout({
     <div className="container mx-auto flex flex-col gap-8 px-4 py-8 md:flex-row md:gap-12">
       <aside className="shrink-0 md:w-40 ">
         <nav
-          className="flex flex-wrap gap-2 md:flex-col md:items-start md:gap-4 md:pt-20 "
+          className="sticky top-3 flex flex-wrap gap-2 md:flex-col md:items-start md:gap-4 md:pt-20 "
           aria-label="Book categories"
         >
           <CategoryNavLink href="/books">
