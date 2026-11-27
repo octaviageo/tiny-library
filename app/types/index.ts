@@ -10,7 +10,7 @@ export type Book = {
   category: string
   dateAdded: string
   description: string
-  price: string
+  price: number
 }
 
 // Page Types
