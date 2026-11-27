@@ -12,7 +12,8 @@ export default function BookCard ({book} : BookCardProps) {
             href={`/books/${book.id}`}
             className="block rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-800"
         >
-            <div className="h-full overflow-hidden transition-shadow bg-white rounded-lg shadow-md hover:shadow-lg" role="article">
+            <div className="h-full overflow-hidden transition-shadow bg-[#fafafa] rounded-lg shadow-md hover:shadow-lg
+            hover:bg-[#CDD6D2] hover:transition hover:duration-300" role="article">
             
                     <div className="relative aspect-square">
                         <Image

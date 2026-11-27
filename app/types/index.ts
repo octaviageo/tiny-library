@@ -9,6 +9,8 @@ export type Book = {
   image: string
   category: string
   dateAdded: string
+  description: string
+  price: string
 }
 
 // Page Types

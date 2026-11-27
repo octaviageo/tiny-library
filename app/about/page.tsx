@@ -9,7 +9,7 @@ import flag from "@/public/icons/Flag.svg"
 export default function About () {
     return (
         <main>
-            <section className = "grid grid-cols-1 md:grid-cols-2 gap-8 px-6 py-12 mx-auto md:flex-row max-w-7xl ">
+            <section className = "grid grid-cols-1 md:grid-cols-2 gap-8 px-6 py-12 mx-auto md:flex-row max-w-7xl md:mt-10 ">
             <div>
                 <Image 
                     src={heroImage} 
@@ -91,7 +91,7 @@ export default function About () {
 
             <hr className="border-gray-200" aria-hidden="true" />
 
-            <section className="container max-w-3xl px-4 py-8 mx-auto">
+            <section className="container max-w-3xl px-4 py-8 mx-auto md:mb-10">
                 <div className="prose max-w-none">
                     <h2 className="mb-4 text-2xl font-semibold">Our Ethos</h2>
                     <p className="mb-4 text-gray-700 pb-4 border-gray-400 ">

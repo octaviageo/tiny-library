@@ -5,7 +5,7 @@ import maskImage from "@/public/hero.svg"
 export default function Home() {
   return (
     <main>
-      <section className="flex flex-col-reverse items-center justify-between gap-8 px-6 py-12 mx-auto md:flex-row max-w-7xl">
+      <section className="flex flex-col-reverse items-center justify-between gap-8 px-6 py-12 mx-auto md:flex-row max-w-7xl md:mt-10 md:mb-10">
         <div className="flex-1 space-y-6">
           {/* <p className="hidden text-sm text-gray-600 uppercase md:block">
             Browse books

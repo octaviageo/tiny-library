@@ -4,7 +4,7 @@ import contactImage from "@/public/contact.jpg"
 
 export default function Contact () {
     return (
-        <section className = "grid grid-cols-1 md:grid-cols-2 gap-8 px-6 py-12 mx-auto md:flex-row max-w-7xl">
+        <section className = "grid grid-cols-1 md:mt-10 md:mb-10 md:grid-cols-2 gap-8 px-6 py-12 mx-auto md:flex-row max-w-7xl">
             <div>
                 <Image 
                     src={contactImage} 
