@@ -14,9 +14,9 @@ export default function Home() {
             Find your next favorite book
           </h1>
         
-          <p className="text-lg text-gray-600 w-2xl">
-            Tiny Library is a cosy corner of the web where readers 
-            discover hand‑picked titles across every genre, from 
+          <p className="text-lg text-gray-600 w-l">
+            Tiny Library is a cosy corner of the web where readers 
+            discover hand-picked titles across every genre, from 
             timeless classics to hidden indie gems.
           </p>
 
