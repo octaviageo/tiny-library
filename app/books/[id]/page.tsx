@@ -39,7 +39,7 @@ export default async function BookDetailPage({ params } : BookDetailPageProps) {
                 by {book.author}
               </p>
             </div>
-          <div className="mb-4 prose prose-lg w-sm">
+          <div className="mb-4 prose prose-lg md:w-sm">
             <p className="leading-relaxed text-gray-700">
               {book.description}
             </p>
