@@ -58,7 +58,7 @@ export default async function BookDetailPage({ params } : BookDetailPageProps) {
           </div>
           </div>
 
-          <div className=" flex-col bg-[#1A4131] w-sm flex p-5 md:p-6 rounded-lg gap-2 mt-10">
+          <div className=" flex-col bg-[#1A4131] md:w-sm flex p-5 md:p-6 rounded-lg gap-2 mt-10">
             <p className="text-white text-xl md:text-2xl text-center ">Price: €{book.price}</p>
             <span className="text-white text-sm md:text-l text-center">(incl. VAT)</span>
           </div>
